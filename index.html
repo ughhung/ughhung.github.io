@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Portfolio</title>
+    <!-- Load the Inter font from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Load Tailwind CSS from CDN for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f9fa; /* Light gray background */
+            color: #333; /* Dark gray text */
+        }
+        /* Custom styles for a professional look */
+        .card-bg {
+            background-color: #ffffff; /* White card background */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .btn-primary {
+            background-color: #1a73e8; /* Google Blue */
+            transition: all 0.3s ease;
+        }
+        .btn-primary:hover {
+            background-color: #1764c5;
+        }
+    </style>
+</head>
+<body class="antialiased leading-relaxed">
+
+    <!-- Hero Section -->
+    <header class="container mx-auto px-4 py-20 md:py-32 flex flex-col md:flex-row items-center justify-center text-center md:text-left gap-8">
+        <!-- Profile Picture and Call to Action -->
+        <div class="md:w-1/2 flex flex-col items-center md:items-start space-y-6">
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900">Hi, I'm <span class="text-blue-600">Your Name</span>.</h1>
+            <p class="text-lg md:text-xl text-gray-700 max-w-lg">
+                I am a passionate and results-driven professional specializing in **[Your Field, e.g., Web Development, Graphic Design, Data Analysis]**.
+                I build beautiful, functional, and user-friendly digital experiences.
+            </p>
+            <!-- Call to Action Button -->
+            <a href="#contact" class="px-6 py-3 rounded-full text-white font-semibold shadow-lg btn-primary">
+                Get in Touch
+            </a>
+        </div>
+        <!-- Placeholder for a Professional Photo -->
+        <div class="w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden border-4 border-white shadow-xl">
+            <img src="https://placehold.co/600x600/e2e8f0/64748b?text=Your+Photo" alt="A professional headshot of [Your Name]" class="w-full h-full object-cover">
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <main id="about" class="container mx-auto px-4 py-16 md:py-24">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900">About Me</h2>
+            <hr class="w-16 h-1 mt-4 mx-auto bg-blue-600 border-0 rounded">
+        </div>
+        <div class="flex flex-col md:flex-row justify-between items-center gap-8 md:gap-16">
+            <div class="md:w-1/2">
+                <p class="text-gray-700 text-lg leading-relaxed">
+                    [Your short, engaging bio goes here. Talk about your passion, what drives you, and what kind of work you're looking for. This is your chance to show your personality!]
+                </p>
+                <p class="text-gray-700 text-lg leading-relaxed mt-4">
+                    I am skilled in:
+                </p>
+                <!-- Skills List -->
+                <ul class="mt-2 list-disc list-inside space-y-1 text-gray-700">
+                    <li>[Skill 1, e.g., JavaScript, React, Python]</li>
+                    <li>[Skill 2, e.g., UI/UX Design, Figma, Sketch]</li>
+                    <li>[Skill 3, e.g., Data Analysis, SQL, Tableau]</li>
+                    <li>[Skill 4, e.g., SEO, Content Strategy]</li>
+                </ul>
+                <!-- Add a button to download a resume -->
+                <a href="[Link to your resume file]" class="inline-block mt-6 px-6 py-2 rounded-full border-2 border-blue-600 text-blue-600 font-semibold hover:bg-blue-600 hover:text-white transition-colors duration-300">
+                    Download Resume
+                </a>
+            </div>
+            <div class="md:w-1/2 w-full text-center md:text-left">
+                <!-- Placeholder for a simple graphic or a different photo -->
+                <div class="w-full h-64 md:h-80 bg-gray-200 rounded-lg overflow-hidden flex items-center justify-center p-4 card-bg">
+                    <p class="text-gray-500 text-sm">Image or Graphic Here</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Projects Section -->
+    <section id="projects" class="container mx-auto px-4 py-16 md:py-24">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900">My Projects</h2>
+            <hr class="w-16 h-1 mt-4 mx-auto bg-blue-600 border-0 rounded">
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Project Card 1 -->
+            <div class="rounded-xl overflow-hidden card-bg">
+                <img src="https://placehold.co/800x600/805ad5/ffffff?text=Project+1+Image" alt="Project 1" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-gray-900">Project Title One</h3>
+                    <p class="text-gray-600 mt-2">
+                        A brief description of your project, highlighting the key technologies and your role in the development.
+                    </p>
+                    <a href="#" class="mt-4 inline-block text-blue-600 font-semibold hover:underline">
+                        View Project
+                    </a>
+                </div>
+            </div>
+            <!-- Project Card 2 -->
+            <div class="rounded-xl overflow-hidden card-bg">
+                <img src="https://placehold.co/800x600/3182ce/ffffff?text=Project+2+Image" alt="Project 2" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-gray-900">Project Title Two</h3>
+                    <p class="text-gray-600 mt-2">
+                        A brief description of your project, highlighting the key technologies and your role in the development.
+                    </p>
+                    <a href="#" class="mt-4 inline-block text-blue-600 font-semibold hover:underline">
+                        View Project
+                    </a>
+                </div>
+            </div>
+            <!-- Project Card 3 -->
+            <div class="rounded-xl overflow-hidden card-bg">
+                <img src="https://placehold.co/800x600/f6ad55/ffffff?text=Project+3+Image" alt="Project 3" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-gray-900">Project Title Three</h3>
+                    <p class="text-gray-600 mt-2">
+                        A brief description of your project, highlighting the key technologies and your role in the development.
+                    </p>
+                    <a href="#" class="mt-4 inline-block text-blue-600 font-semibold hover:underline">
+                        View Project
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container mx-auto px-4 py-16 md:py-24">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Get in Touch</h2>
+            <hr class="w-16 h-1 mt-4 mx-auto bg-blue-600 border-0 rounded">
+        </div>
+        <div class="max-w-xl mx-auto text-center card-bg p-8 rounded-xl shadow-lg">
+            <p class="text-gray-700 text-lg mb-6">
+                I'm currently seeking new opportunities and collaborations. Feel free to reach out!
+            </p>
+            <!-- Email and Social Links -->
+            <div class="space-y-4">
+                <a href="mailto:your.email@example.com" class="text-blue-600 hover:underline text-lg font-semibold">
+                    your.email@example.com
+                </a>
+                <div class="flex justify-center items-center space-x-4">
+                    <!-- Placeholder links to social media -->
+                    <a href="[Your LinkedIn URL]" class="text-gray-600 hover:text-blue-600">LinkedIn</a>
+                    <a href="[Your GitHub URL]" class="text-gray-600 hover:text-blue-600">GitHub</a>
+                    <a href="[Your Twitter URL]" class="text-gray-600 hover:text-blue-600">Twitter</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-gray-300 py-6 mt-12">
+        <div class="container mx-auto px-4 text-center">
+            &copy; 2024 Your Name. All rights reserved.
+        </div>
+    </footer>
+
+</body>
+</html>
